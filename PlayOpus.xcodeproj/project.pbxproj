@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C75001A82982B7600065D233 /* ffmpegkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75001982982B7570065D233 /* ffmpegkit.framework */; };
+		C75001A92982B7600065D233 /* ffmpegkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C75001982982B7570065D233 /* ffmpegkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001AA2982B7620065D233 /* libavcodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C750019A2982B7580065D233 /* libavcodec.framework */; };
+		C75001AB2982B7620065D233 /* libavcodec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C750019A2982B7580065D233 /* libavcodec.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001AC2982B7630065D233 /* libavdevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C750019D2982B7580065D233 /* libavdevice.framework */; };
+		C75001AD2982B7630065D233 /* libavdevice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C750019D2982B7580065D233 /* libavdevice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001AE2982B7640065D233 /* libavfilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C750019C2982B7580065D233 /* libavfilter.framework */; };
+		C75001AF2982B7640065D233 /* libavfilter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C750019C2982B7580065D233 /* libavfilter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001B02982B7650065D233 /* libavformat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C750019B2982B7580065D233 /* libavformat.framework */; };
+		C75001B12982B7650065D233 /* libavformat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C750019B2982B7580065D233 /* libavformat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001B22982B7670065D233 /* libavutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75001992982B7580065D233 /* libavutil.framework */; };
+		C75001B32982B7670065D233 /* libavutil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C75001992982B7580065D233 /* libavutil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001B42982B7680065D233 /* libswresample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C750019F2982B7590065D233 /* libswresample.framework */; };
+		C75001B52982B7680065D233 /* libswresample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C750019F2982B7590065D233 /* libswresample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C75001B62982B7690065D233 /* libswscale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C750019E2982B7590065D233 /* libswscale.framework */; };
+		C75001B72982B7690065D233 /* libswscale.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C750019E2982B7590065D233 /* libswscale.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C790ABA929809EEA005AA5DA /* PlayOpusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C790ABA829809EEA005AA5DA /* PlayOpusApp.swift */; };
+		C790ABAB29809EEA005AA5DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C790ABAA29809EEA005AA5DA /* ContentView.swift */; };
+		C790ABAD29809EEC005AA5DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C790ABAC29809EEC005AA5DA /* Assets.xcassets */; };
+		C790ABB129809EEC005AA5DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C790ABB029809EEC005AA5DA /* Preview Assets.xcassets */; };
+		C790ABBC29809F21005AA5DA /* ayat_ul_kursi_16K_2C_16K.opus in Resources */ = {isa = PBXBuildFile; fileRef = C790ABB929809F21005AA5DA /* ayat_ul_kursi_16K_2C_16K.opus */; };
+		C790ABBD29809F21005AA5DA /* ayat_ul_kursi_16K.opus in Resources */ = {isa = PBXBuildFile; fileRef = C790ABBA29809F21005AA5DA /* ayat_ul_kursi_16K.opus */; };
+		C790ABBE29809F21005AA5DA /* ayat_ul_kursi.opus in Resources */ = {isa = PBXBuildFile; fileRef = C790ABBB29809F21005AA5DA /* ayat_ul_kursi.opus */; };
+		C790ABC02980AF58005AA5DA /* ayat_ul_kursi_16K_2C_16K.caf in Resources */ = {isa = PBXBuildFile; fileRef = C790ABBF2980AF58005AA5DA /* ayat_ul_kursi_16K_2C_16K.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C71C938F2981E27C0041040B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C75001AB2982B7620065D233 /* libavcodec.framework in Embed Frameworks */,
+				C75001B72982B7690065D233 /* libswscale.framework in Embed Frameworks */,
+				C75001B12982B7650065D233 /* libavformat.framework in Embed Frameworks */,
+				C75001AF2982B7640065D233 /* libavfilter.framework in Embed Frameworks */,
+				C75001AD2982B7630065D233 /* libavdevice.framework in Embed Frameworks */,
+				C75001B52982B7680065D233 /* libswresample.framework in Embed Frameworks */,
+				C75001A92982B7600065D233 /* ffmpegkit.framework in Embed Frameworks */,
+				C75001B32982B7670065D233 /* libavutil.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C75001982982B7570065D233 /* ffmpegkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ffmpegkit.framework; sourceTree = "<group>"; };
+		C75001992982B7580065D233 /* libavutil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavutil.framework; sourceTree = "<group>"; };
+		C750019A2982B7580065D233 /* libavcodec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavcodec.framework; sourceTree = "<group>"; };
+		C750019B2982B7580065D233 /* libavformat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavformat.framework; sourceTree = "<group>"; };
+		C750019C2982B7580065D233 /* libavfilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavfilter.framework; sourceTree = "<group>"; };
+		C750019D2982B7580065D233 /* libavdevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavdevice.framework; sourceTree = "<group>"; };
+		C750019E2982B7590065D233 /* libswscale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswscale.framework; sourceTree = "<group>"; };
+		C750019F2982B7590065D233 /* libswresample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswresample.framework; sourceTree = "<group>"; };
+		C7869F632981B16A004E36C8 /* ffmpegkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ffmpegkit.framework; path = "../../../CLionProjects/GithubClone/ffmpeg-kit/prebuilt0/bundle-apple-framework-ios/ffmpegkit.framework"; sourceTree = "<group>"; };
+		C790ABA529809EEA005AA5DA /* PlayOpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayOpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C790ABA829809EEA005AA5DA /* PlayOpusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOpusApp.swift; sourceTree = "<group>"; };
+		C790ABAA29809EEA005AA5DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C790ABAC29809EEC005AA5DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C790ABAE29809EEC005AA5DA /* PlayOpus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlayOpus.entitlements; sourceTree = "<group>"; };
+		C790ABB029809EEC005AA5DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C790ABB929809F21005AA5DA /* ayat_ul_kursi_16K_2C_16K.opus */ = {isa = PBXFileReference; lastKnownFileType = file; path = ayat_ul_kursi_16K_2C_16K.opus; sourceTree = "<group>"; };
+		C790ABBA29809F21005AA5DA /* ayat_ul_kursi_16K.opus */ = {isa = PBXFileReference; lastKnownFileType = file; path = ayat_ul_kursi_16K.opus; sourceTree = "<group>"; };
+		C790ABBB29809F21005AA5DA /* ayat_ul_kursi.opus */ = {isa = PBXFileReference; lastKnownFileType = file; path = ayat_ul_kursi.opus; sourceTree = "<group>"; };
+		C790ABBF2980AF58005AA5DA /* ayat_ul_kursi_16K_2C_16K.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ayat_ul_kursi_16K_2C_16K.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C790ABA229809EEA005AA5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75001B02982B7650065D233 /* libavformat.framework in Frameworks */,
+				C75001B62982B7690065D233 /* libswscale.framework in Frameworks */,
+				C75001A82982B7600065D233 /* ffmpegkit.framework in Frameworks */,
+				C75001B22982B7670065D233 /* libavutil.framework in Frameworks */,
+				C75001AA2982B7620065D233 /* libavcodec.framework in Frameworks */,
+				C75001B42982B7680065D233 /* libswresample.framework in Frameworks */,
+				C75001AE2982B7640065D233 /* libavfilter.framework in Frameworks */,
+				C75001AC2982B7630065D233 /* libavdevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		348CD672BAE01D3CF0EC39BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7869F632981B16A004E36C8 /* ffmpegkit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A7194CB98A22740FB83D7B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C790AB9C29809EEA005AA5DA = {
+			isa = PBXGroup;
+			children = (
+				C790ABA729809EEA005AA5DA /* PlayOpus */,
+				C790ABA629809EEA005AA5DA /* Products */,
+				348CD672BAE01D3CF0EC39BF /* Frameworks */,
+				9A7194CB98A22740FB83D7B3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C790ABA629809EEA005AA5DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C790ABA529809EEA005AA5DA /* PlayOpus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C790ABA729809EEA005AA5DA /* PlayOpus */ = {
+			isa = PBXGroup;
+			children = (
+				C75001982982B7570065D233 /* ffmpegkit.framework */,
+				C750019A2982B7580065D233 /* libavcodec.framework */,
+				C750019D2982B7580065D233 /* libavdevice.framework */,
+				C750019C2982B7580065D233 /* libavfilter.framework */,
+				C750019B2982B7580065D233 /* libavformat.framework */,
+				C75001992982B7580065D233 /* libavutil.framework */,
+				C750019F2982B7590065D233 /* libswresample.framework */,
+				C750019E2982B7590065D233 /* libswscale.framework */,
+				C790ABB829809F09005AA5DA /* Audio */,
+				C790ABA829809EEA005AA5DA /* PlayOpusApp.swift */,
+				C790ABAA29809EEA005AA5DA /* ContentView.swift */,
+				C790ABAC29809EEC005AA5DA /* Assets.xcassets */,
+				C790ABAE29809EEC005AA5DA /* PlayOpus.entitlements */,
+				C790ABAF29809EEC005AA5DA /* Preview Content */,
+			);
+			path = PlayOpus;
+			sourceTree = "<group>";
+		};
+		C790ABAF29809EEC005AA5DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C790ABB029809EEC005AA5DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C790ABB829809F09005AA5DA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C790ABBF2980AF58005AA5DA /* ayat_ul_kursi_16K_2C_16K.caf */,
+				C790ABB929809F21005AA5DA /* ayat_ul_kursi_16K_2C_16K.opus */,
+				C790ABBA29809F21005AA5DA /* ayat_ul_kursi_16K.opus */,
+				C790ABBB29809F21005AA5DA /* ayat_ul_kursi.opus */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C790ABA429809EEA005AA5DA /* PlayOpus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C790ABB429809EEC005AA5DA /* Build configuration list for PBXNativeTarget "PlayOpus" */;
+			buildPhases = (
+				C790ABA129809EEA005AA5DA /* Sources */,
+				C790ABA229809EEA005AA5DA /* Frameworks */,
+				C790ABA329809EEA005AA5DA /* Resources */,
+				C71C938F2981E27C0041040B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayOpus;
+			productName = PlayOpus;
+			productReference = C790ABA529809EEA005AA5DA /* PlayOpus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C790AB9D29809EEA005AA5DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C790ABA429809EEA005AA5DA = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = C790ABA029809EEA005AA5DA /* Build configuration list for PBXProject "PlayOpus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C790AB9C29809EEA005AA5DA;
+			productRefGroup = C790ABA629809EEA005AA5DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C790ABA429809EEA005AA5DA /* PlayOpus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C790ABA329809EEA005AA5DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C790ABBD29809F21005AA5DA /* ayat_ul_kursi_16K.opus in Resources */,
+				C790ABBC29809F21005AA5DA /* ayat_ul_kursi_16K_2C_16K.opus in Resources */,
+				C790ABBE29809F21005AA5DA /* ayat_ul_kursi.opus in Resources */,
+				C790ABB129809EEC005AA5DA /* Preview Assets.xcassets in Resources */,
+				C790ABC02980AF58005AA5DA /* ayat_ul_kursi_16K_2C_16K.caf in Resources */,
+				C790ABAD29809EEC005AA5DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C790ABA129809EEA005AA5DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C790ABAB29809EEA005AA5DA /* ContentView.swift in Sources */,
+				C790ABA929809EEA005AA5DA /* PlayOpusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C790ABB229809EEC005AA5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C790ABB329809EEC005AA5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C790ABB529809EEC005AA5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlayOpus/PlayOpus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayOpus/Preview Content\"";
+				DEVELOPMENT_TEAM = J4SV74FUBV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayOpus",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = snnafi.PlayOpus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C790ABB629809EEC005AA5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlayOpus/PlayOpus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayOpus/Preview Content\"";
+				DEVELOPMENT_TEAM = J4SV74FUBV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayOpus",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = snnafi.PlayOpus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C790ABA029809EEA005AA5DA /* Build configuration list for PBXProject "PlayOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C790ABB229809EEC005AA5DA /* Debug */,
+				C790ABB329809EEC005AA5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C790ABB429809EEC005AA5DA /* Build configuration list for PBXNativeTarget "PlayOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C790ABB529809EEC005AA5DA /* Debug */,
+				C790ABB629809EEC005AA5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C790AB9D29809EEA005AA5DA /* Project object */;
+}
